@@ -1,0 +1,308 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+@import url(//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,latin-ext);
+@import url(//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css);
+
+.container{
+    transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    max-width: 1024px;
+    background: #fff;
+    margin-top: 2%;
+    position: relative;
+}
+
+body{
+    background: #eee;
+    font-family: 'Open Sans';
+}
+
+::selection {
+    background: rgba(245, 109, 69, 0.1);
+}
+::-moz-selection {
+    background: rgba(245, 109, 69, 0.1);
+}
+
+*{
+    border-radius: 0 !important;
+}
+
+
+
+h1{
+    font-family: 'Montserrat';
+}
+
+h3{
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#personal {
+    background: url("cover.jpg") #F56D45 center no-repeat;
+    position: relative;
+    min-height: 353px;
+}
+
+#personal .meet{
+    color: #fff;
+    margin-right: 25%;
+    margin-top: 65px;
+    margin-left: 35px;
+}
+
+#personal .meet p a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+#personal .social{
+    font-size: 28px;
+    margin-top: 10px;
+}
+#personal .social a{
+    color: inherit;
+}
+
+
+#personal .meet h1{
+    margin-top: 0;
+    font-size: 34px;
+    text-shadow: 1px 1px 1px #333;
+}
+
+#personal .meet h1 small{
+    display: block;
+    font-size: 18px;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#personal .meet .divider{
+    width: 60px;
+    height: 2px;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+#personal .meet p{
+    text-shadow: 1px 1px #333;
+    line-height: 26px;
+    font-weight: 300;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#projects{
+    padding: 15px;
+}
+
+
+#projects .nav a{
+    color: #000;
+    transition: background 0.5s;
+    -ms-transition: background 0.5s;
+}
+
+#projects .nav{
+    background: #fafafa;
+    border: 1px solid rgba(245, 109, 69, 0.11);
+}
+
+#projects .tab-content{
+    margin-top: 15px;
+}
+
+#projects .nav li.active a, .nav li.active a:focus{
+    background: #F56D45;
+    color: #fff;
+    font-weight: 600;
+}
+
+#projects .nav li.active:hover a{
+    background: #F56D45;
+}
+
+
+
+@keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+#obd .navico{
+    z-index: 200;
+    width: 24px;
+    height: 24px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    transition: transform 0.5s;
+}
+
+
+#obd .live{
+    position: absolute;
+    z-index: 200;
+    padding: 5px;
+    background: rgba(255,255,255,0.6);
+}
+
+#obd .live span{
+    width: 10px;
+    height: 10px;
+    background: rgb(226, 59, 59);
+    display: inline-block;
+    border-radius: 50% !important;
+    animation: blink 2s linear 0s infinite;
+    -webkit-animation: blink 2s linear 0s infinite;
+    -ms-animation: blink 2s linear 0s infinite;
+}
+
+#obd #map{
+    min-height: 337px;
+}
+
+
+
+#obd .progress-bar-warning{
+    background: #F56D45;
+    font-weight: 600;
+}
+
+#obd  #rpm, #speed{
+    margin: 0 auto;
+}
+
+#obd #engine{
+    position: relative;
+    height: 337px;
+}
+
+#obd #engine.off .disable{
+    display: block;
+}
+
+#obd #engine .disable{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 100;
+    padding-top: 120px;
+    font-size: 18px;
+    color: #fafafa;
+    text-shadow: 1px 1px #333;
+    display: none;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default:disabled{
+    background: #F56D45;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, sans-serif;
+    border:0;
+}
+
+
+#obd  #engine.off .blur{
+    filter: blur(3px); -webkit-filter: blur(3px); -moz-filter: blur(3px);
+    -o-filter: blur(3px); -ms-filter: blur(3px);
+}
+
+#obd  #engine h4{
+    margin-top: 35px;
+}
+
+
+
+#security #video{
+    height: 320px;
+    background: #f1f1f1;
+    line-height: 320px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#security .detected{
+    background: #00BE5D;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+    font-size: 32px;
+}
+
+#security .detected small{
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+
+}
+
+#security .info:hover{
+    text-decoration: none;
+}
+
+#security .info{
+    line-height: 48px;
+    margin-top: 40px;
+}
+
+#security .info i{
+    font-size: 48px;
+    display: block;
+}
+
+
+@media(max-width: 992px){
+    #personal{
+        background-position: right;
+    }
+
+    #personal .meet{
+        margin-top: 0;
+        padding-top: 50px;
+    }
+}
+
+
+@media(max-width: 768px){
+
+    #personal .meet{
+        margin-top: 0;
+        padding-top: 15px;
+    }
+
+    #container .content{
+        padding: 20px;
+    }
+
+    #securityTab{
+        width: 100%;
+        display: block;
+    }
+    .nav li{
+        width: 49%;
+    }
+    .nav li a{
+        text-align: center;
+    }
+
+    #personal .meet{
+        margin-right: 0;
+    }
+}

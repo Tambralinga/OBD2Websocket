@@ -1,0 +1,29 @@
+*{
+    border-radius: 0 !important;
+}
+
+body{
+    background: #000;
+    color: forestgreen;
+    font-size: 14px;
+    font-family: 'Arial';
+}
+
+#log{
+    padding: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 50%;
+}
+
+#log p{
+    padding-bottom: 4px;
+    border-bottom: 1px solid #333;
+    display: block;
+}
+
+#log p.error{
+    padding-bottom: 4px;
+    border-bottom: 1px solid #333;
+    color: red;
+}
